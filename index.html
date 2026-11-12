@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Birthday Cake</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="float-orb" aria-hidden="true">
+      <span class="orb orb-1"></span>
+      <span class="orb orb-2"></span>
+      <span class="orb orb-3"></span>
+      <span class="orb orb-4"></span>
+      <span class="orb orb-5"></span>
+      <span class="orb orb-6"></span>
+      <span class="orb orb-7"></span>
+      <span class="orb orb-8"></span>
+    </div>
+
+    <div class="page-shell">
+      <div class="scene">
+        <div class="cake-stage" id="cakeStage" aria-label="Birthday cake scene">
+          <div class="cake-shadow"></div>
+
+          <div class="cake-stack" aria-live="polite">
+            <div class="cake-topper" aria-label="Birthday cake decoration">
+              <div class="candle candle-13" aria-label="Candle for age 13"><span>13</span></div>
+              <div class="frosting-text">SSwg Na sprite</div>
+            </div>
+            <div class="cake-layer layer-bottom animate" data-layer="bottom"></div>
+            <div class="cake-layer layer-middle animate" data-layer="middle"></div>
+            <div class="cake-layer layer-top animate" data-layer="top"></div>
+          </div>
+
+          <div class="knife" id="knife" aria-label="Knife for cutting cake" role="button" tabindex="0"></div>
+        </div>
+
+        <button class="start-btn" id="startBtn" type="button">เริ่มตัดเค้กเลย</button>
+
+        <div class="message-modal" id="messageModal" aria-hidden="true">
+          <div class="message-card">
+            <p>สุขสันต์วันเกิดนะจ้ะ<br />ปีนี้ก็ 13 แล้ว<br />โตขึ้นอีกปี ใช้ชีวิตให้มีความสุข<br />ไม่เครียด สุขล้นๆนะ</p>
+            <button type="button" id="closeModal">ปิด</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
